@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR;
+
 
 public class SpawnShape : MonoBehaviour {
 
@@ -14,21 +16,17 @@ public class SpawnShape : MonoBehaviour {
 	public float EndRate;
 	private float CurrentRate;
 
-	public Color SlowColor;
-	public Color FastColor;
-
 	private Color CurrentColor;
 
-	private SteamVR_TrackedObject trackedObj; 
-	private SteamVR_Controller.Device Controller;
+    private SteamVR_Behaviour_Pose Controller;
 
-	public bool stopSpawning { get; set;}
+    public bool stopSpawning { get; set;}
 
 	public int SpawnCount { get; set; }
 
 	private Transitioner TransitionControl;
 
-	public bool FadeOut {get; set;}
+    public bool FadeOut {get; set;}
 
 	// Use this for initialization
 	void Start () {
@@ -36,13 +34,12 @@ public class SpawnShape : MonoBehaviour {
 
 		CurrentRate = StartRate;
 
-		trackedObj = this.GetComponent<SteamVR_TrackedObject> ();
-		Controller = SteamVR_Controller.Input ((int)trackedObj.index);
+        Controller = GetComponent<SteamVR_Behaviour_Pose>();
+        Debug.Log(Controller);
 
+    }
 
-	}
-
-	public void StartSpawning()
+    public void StartSpawning()
 	{
         stopSpawning = false;
         SpawnCount = 0;
@@ -78,23 +75,15 @@ public class SpawnShape : MonoBehaviour {
 		//give the object an upward movement
 		SpawnedShape.GetComponent<Rigidbody>().AddForce(Vector3.up * 10);
 
-		//CurrentColor = Color.Lerp (SlowColor, FastColor, Controller.velocity.magnitude/3);
-	//	if (Controller.velocity.magnitude > 1.5f) {
-	//		SpawnedShape.GetComponent<MeshRenderer> ().sharedMaterial = FastColor;
-	//	} else {
-	//		SpawnedShape.GetComponent<MeshRenderer> ().sharedMaterial = SlowColor;
-	//	}
 
         if(FadeOut == false)
         {
             SpawnedShape.GetComponent<Particle_Color>().InactiveState();
         }
 
+		SpawnedShape.transform.localScale = Vector3.Lerp (new Vector3 (.02f, .02f, .02f), new Vector3 (.2f, .2f, .2f), (Controller.GetVelocity().magnitude + .01f)/3);
 
-		SpawnedShape.GetComponent<MeshRenderer> ().material.SetColor("_EmissionColor", Color.Lerp(SlowColor, FastColor, Controller.velocity.magnitude/3));
-
-		SpawnedShape.transform.localScale = Vector3.Lerp (new Vector3 (.02f, .02f, .02f), new Vector3 (.2f, .2f, .2f), Controller.velocity.magnitude/3);
-		//SpawnedShape.GetComponent<MeshRenderer> ().material.SetColor ("_EmissionColor", CurrentColor);
+        //Debug.Log(Controller.GetVelocity());
 
 		//switch what layers the particles are on 
 		//SpawnCount < 200 && 

@@ -70,11 +70,13 @@ public class ColorTransition : MonoBehaviour {
 
     private void OnValidate()
     {
-
-        for (int i = 0; i < colorchoice[CurrentColor].colors.Length; i++)
+        if (colorchoice.Length > 0)
         {
-            material.SetColor(colorchoice[CurrentColor].VariableNames[i], colorchoice[CurrentColor].colors[i]);
+            for (int i = 0; i < colorchoice[CurrentColor].colors.Length; i++)
+            {
+                material.SetColor(colorchoice[CurrentColor].VariableNames[i], colorchoice[CurrentColor].colors[i]);
 
+            }
         }
 
     }

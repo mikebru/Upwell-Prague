@@ -94,7 +94,7 @@ Material:
     - _UVSec: 0
     - _Wavelength: 13.02
     - _ZWrite: 0
-    - __dirty: 1
+    - __dirty: 0
     m_Colors:
     - _BotEmission: {r: 0.41392028, g: 0.88303, b: 5.518937, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 0.422}

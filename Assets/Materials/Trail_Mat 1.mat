@@ -89,9 +89,9 @@ Material:
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _BotEmission: {r: 0, g: 1, b: 1, a: 1}
+    - _BotEmission: {r: 0, g: 0.97307885, b: 1.0139645, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0.73304176, b: 0.9433962, a: 1}
     - _Remap: {r: 0, g: 1, b: 0, a: 1}
     - _TintColor: {r: 0, g: 0.74966985, b: 0.7921569, a: 1}
-    - _TopEmission: {r: 3.001234, g: 1.3477366, b: 0, a: 1}
+    - _TopEmission: {r: 2.9960785, g: 1.4102618, b: 0, a: 1}

@@ -122,14 +122,17 @@ public class LineDraw : MonoBehaviour {
 
     private void OnDrawGizmosSelected()
     {
-        if (StraightLine == false)
+        if (lineRenderer != null)
         {
-            SetDrawValues(transform.position, MidPoint.position, EndPoint.position);
-            DrawCurve();
-        }
-        else
-        {
-            DrawLine();
+            if (StraightLine == false)
+            {
+                SetDrawValues(transform.position, MidPoint.position, EndPoint.position);
+                DrawCurve();
+            }
+            else
+            {
+                DrawLine();
+            }
         }
     }
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using Valve.VR;
 
 public class StaffController : MonoBehaviour {
 
@@ -12,10 +13,9 @@ public class StaffController : MonoBehaviour {
 	public LayerMask EffectedLayer;
 	public Transform AttractPoint;
 
-	private SteamVR_TrackedObject trackedObj; 
-	private SteamVR_Controller.Device Controller;
+    private SteamVR_Behaviour_Pose Controller;
 
-	private Color CurrentColor;
+    private Color CurrentColor;
 
 	public float CurrentSpeed { get; set;}
 
@@ -24,8 +24,8 @@ public class StaffController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		trackedObj = this.GetComponent<SteamVR_TrackedObject> ();
-		Controller = SteamVR_Controller.Input ((int)trackedObj.index);
+        Controller = GetComponent<SteamVR_Behaviour_Pose>();
+
         isColored = true;
 	}
 	
@@ -35,10 +35,10 @@ public class StaffController : MonoBehaviour {
 
 		ApplyParticleMotion ();
 
-		CurrentSpeed = Controller.velocity.magnitude;
+		CurrentSpeed = Controller.GetVelocity().magnitude;
 
-		if (Controller.velocity.magnitude > 1f) {
-			CurrentColor = RotationToColor (Controller.velocity);
+		if (CurrentSpeed > 1f) {
+			CurrentColor = RotationToColor (Controller.GetVelocity());
 		}
 	}
 
@@ -72,8 +72,8 @@ public class StaffController : MonoBehaviour {
 				//limit the amount of particles that can be controlled
 				if (i < MaxControlledParticles) {
 
-					if (Controller.velocity.magnitude > ControlSpeed && hitList [i].transform.gameObject.GetComponent<ParticleMovement> ().enabled == true) {
-						hitList [i].transform.gameObject.GetComponent<ParticleMovement> ().AttractAngularVelocity (AttractPoint.position, Controller.velocity.magnitude);
+					if (CurrentSpeed > ControlSpeed && hitList [i].transform.gameObject.GetComponent<ParticleMovement> ().enabled == true) {
+						hitList [i].transform.gameObject.GetComponent<ParticleMovement> ().AttractAngularVelocity (AttractPoint.position, CurrentSpeed);
 					}
 
 					//hits [i].transform.gameObject.GetComponent<ParticleMovement> ().AddVelocity (AttractPoint.forward.normalized , Controller.velocity);
@@ -98,9 +98,9 @@ public class StaffController : MonoBehaviour {
 	{
 
 
-		float R = (CurrentVector.x * Controller.velocity.x/10) + .1f;
-		float G = (CurrentVector.y * Controller.velocity.y/10) + .1f;
-		float B = (CurrentVector.z * Controller.velocity.z/10) + .1f;
+		float R = (CurrentVector.x * CurrentVector.x / 10) + .1f;
+		float G = (CurrentVector.y * CurrentVector.y/ 10) + .1f;
+		float B = (CurrentVector.z * CurrentVector.z/ 10) + .1f;
 
 		Color DirectionColor = new Color (R, G, B, 1);
 
