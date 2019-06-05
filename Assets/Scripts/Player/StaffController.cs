@@ -19,6 +19,9 @@ public class StaffController : MonoBehaviour {
 
 	public float CurrentSpeed { get; set;}
 
+
+    public bool useAttractPoint; 
+
 	public bool isColored {get; set;}
 
 	// Use this for initialization
@@ -72,7 +75,14 @@ public class StaffController : MonoBehaviour {
 				//limit the amount of particles that can be controlled
 				if (i < MaxControlledParticles) {
 
-					if (CurrentSpeed > ControlSpeed && hitList [i].transform.gameObject.GetComponent<ParticleMovement> ().enabled == true) {
+                    float speed = CurrentSpeed;
+
+                    if(useAttractPoint == true)
+                    {
+                        speed = AttractPoint.GetComponent<Rigidbody>().velocity.magnitude; 
+                    }
+
+					if (speed > ControlSpeed && hitList [i].transform.gameObject.GetComponent<ParticleMovement> ().enabled == true) {
 						hitList [i].transform.gameObject.GetComponent<ParticleMovement> ().AttractAngularVelocity (AttractPoint.position, CurrentSpeed);
 					}
 
