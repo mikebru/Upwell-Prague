@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4281351687193026}
   - component: {fileID: 20278666384761200}
-  - component: {fileID: 114258219847763202}
   - component: {fileID: 114534995663618384}
-  m_Layer: 0
+  - component: {fileID: 114258219847763202}
+  m_Layer: 2
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,7 +316,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 1
   m_OcclusionCulling: 1
@@ -948,7 +948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BeginAction:
-    actionPath: /actions/upwell/in/interact
+    actionPath: /actions/default/in/interact
     needsReinit: 0
   handType: 1
 --- !u!114 &114227589115842086
@@ -963,7 +963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BeginAction:
-    actionPath: /actions/upwell/in/interact
+    actionPath: /actions/default/in/interact
     needsReinit: 0
   handType: 2
 --- !u!114 &114258219847763202
