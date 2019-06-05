@@ -59,9 +59,15 @@ public class StaffController : MonoBehaviour {
 		//if we actually hit something
 		if (hits.Length > 0) {
 
+            float speed = CurrentSpeed;
 
-			//create a list and sort it by distance 
-			List<RaycastHit> hitList = new List<RaycastHit>();
+            if (useAttractPoint == true)
+            {
+                speed = AttractPoint.GetComponent<Rigidbody>().velocity.magnitude;
+            }
+
+            //create a list and sort it by distance 
+            List<RaycastHit> hitList = new List<RaycastHit>();
 
 			hitList.AddRange (hits);
 
@@ -75,12 +81,7 @@ public class StaffController : MonoBehaviour {
 				//limit the amount of particles that can be controlled
 				if (i < MaxControlledParticles) {
 
-                    float speed = CurrentSpeed;
 
-                    if(useAttractPoint == true)
-                    {
-                        speed = AttractPoint.GetComponent<Rigidbody>().velocity.magnitude; 
-                    }
 
 					if (speed > ControlSpeed && hitList [i].transform.gameObject.GetComponent<ParticleMovement> ().enabled == true) {
 						hitList [i].transform.gameObject.GetComponent<ParticleMovement> ().AttractAngularVelocity (AttractPoint.position, CurrentSpeed);
