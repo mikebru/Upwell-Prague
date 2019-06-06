@@ -54,7 +54,7 @@ public class ColorTransition : MonoBehaviour {
         while(t<transitionTime)
         {
             // t += Time.fixedUnscaledDeltaTime;
-            t += Time.deltaTime;
+            t += Time.unscaledDeltaTime;
             for (int i = 0; i < colorchoice[index].colors.Length; i++)
             {
                 material.SetColor(colorchoice[CurrentColor].VariableNames[i], Color.Lerp(colorchoice[lastColor].colors[i] , colorchoice[CurrentColor].colors[i], t / transitionTime));

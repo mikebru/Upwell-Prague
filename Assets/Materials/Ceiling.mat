@@ -99,6 +99,7 @@ Material:
     - _SrcBlend: 1
     - _Tesslate: 1
     - _ToggleSwitch0: 0
+    - _Transmit: 1
     - _UVSec: 0
     - _Wavespeed: 1.297
     - _ZWrite: 1
@@ -111,5 +112,5 @@ Material:
     - _Remap: {r: 0.06, g: 0.08, b: 0, a: 0.1}
     - _Til: {r: 1, g: 1, b: 0, a: 0}
     - _Tiling: {r: 80, g: 80, b: 10, a: 10}
-    - _Tint: {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 0}
+    - _Tint: {r: 0.15094334, g: 0.15094334, b: 0.15094334, a: 0}
     - _VertexDisplace: {r: 0, g: 0, b: 0, a: 0}

@@ -99,6 +99,7 @@ Material:
     - _SrcBlend: 1
     - _Tesslate: 1
     - _ToggleSwitch0: 0
+    - _Transmit: 0.61
     - _UVSec: 0
     - _Wavespeed: 1.297
     - _ZWrite: 1
