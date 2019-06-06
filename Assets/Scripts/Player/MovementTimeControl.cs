@@ -86,10 +86,11 @@ public class MovementTimeControl : MonoBehaviour {
 
 			//Debug.Log (Time.timeScale);
 
+            /*
 			for (int i = 0; i < A_Sources.Length; i++) {
 				A_Sources [i].pitch = A_StartPitch [i] * Time.timeScale;
 			}
-
+            */
 		} 
 		
 	}
@@ -169,10 +170,13 @@ public class MovementTimeControl : MonoBehaviour {
         {
             Time.timeScale = .66f;
 
+
+            /*
             for (int i = 0; i < A_Sources.Length; i++)
             {
                 A_Sources[i].pitch = A_StartPitch[i] * Time.timeScale;
             }
+            */
         }
 
     }

@@ -22,8 +22,9 @@ GameObject:
   - component: {fileID: 20278666384761200}
   - component: {fileID: 114534995663618384}
   - component: {fileID: 114258219847763202}
+  - component: {fileID: 114523211054423886}
   m_Layer: 2
-  m_Name: Camera
+  m_Name: Upwell_VR_Cam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1000,6 +1001,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   AttractPoint: {fileID: 4357507169679602}
+  useAttractPoint: 0
 --- !u!114 &114401424700751176
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1092,6 +1094,19 @@ MonoBehaviour:
   - {fileID: 114335479921665086}
   A_Sources: []
   A_StartPitch: []
+--- !u!114 &114523211054423886
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1258502364022058}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7abb10dd13839864baf966f44d548f39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sourceTexture: {fileID: 0}
+  _alphaSupport: 0
 --- !u!114 &114534995663618384
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1254,6 +1269,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   AttractPoint: {fileID: 4390927580595070}
+  useAttractPoint: 0
 --- !u!114 &114897992920018172
 MonoBehaviour:
   m_ObjectHideFlags: 1

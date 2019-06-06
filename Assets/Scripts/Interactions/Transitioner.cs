@@ -99,7 +99,7 @@ public class Transitioner : MonoBehaviour {
 
 		StartCoroutine (RevampedMainTimer ());
 
-        //StartCoroutine(CameraShift());
+        StartCoroutine(CameraShift());
 
         isStarted = true;
 	}
