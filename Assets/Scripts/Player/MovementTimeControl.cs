@@ -124,7 +124,7 @@ public class MovementTimeControl : MonoBehaviour {
 			if (isRetracting == false) {
 				
 				GameTransitioner.particles [i].gameObject.SetActive (true);
-				GameTransitioner.particles[i].GetComponent<Rigidbody> ().velocity = Vector3.zero;
+				GameTransitioner.particles[i].GetComponent<Rigidbody> ().linearVelocity = Vector3.zero;
 				GameTransitioner.particles [i].GetComponent<ParticleMovement> ().enabled = false;
 
 				StartCoroutine (DelayActivateMotion (i));
@@ -153,7 +153,7 @@ public class MovementTimeControl : MonoBehaviour {
 		Vector3 newHeading = Controller.transform.position - GameTransitioner.particles[particleIndex].transform.position;
 		newHeading = newHeading.normalized;
 
-		GameTransitioner.particles[particleIndex].GetComponent<Rigidbody> ().velocity = newHeading * 2;
+		GameTransitioner.particles[particleIndex].GetComponent<Rigidbody> ().linearVelocity = newHeading * 2;
 
 		yield return new WaitForFixedUpdate ();
 		}

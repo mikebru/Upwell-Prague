@@ -1,14 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Valve.VR;
 
 public class ControllerInput : MonoBehaviour {
 
-    private SteamVR_Behaviour_Pose Controller;
+   // private SteamVR_Behaviour_Pose Controller;
 
-    public SteamVR_Action_Boolean BeginAction;
-    public SteamVR_Input_Sources handType;
+   // public SteamVR_Action_Boolean BeginAction;
+  //  public SteamVR_Input_Sources handType;
 
 	private MovementTimeControl EffectControl;
 
@@ -19,14 +18,14 @@ public class ControllerInput : MonoBehaviour {
 		gameControl = FindObjectOfType<Transitioner> ();
 		EffectControl = FindObjectOfType<MovementTimeControl> ();
 
-        Controller = GetComponent<SteamVR_Behaviour_Pose>();
+    //    Controller = GetComponent<SteamVR_Behaviour_Pose>();
 
-        BeginAction.AddOnStateDownListener(TriggerAction, handType);
+    //    BeginAction.AddOnStateDownListener(TriggerAction, handType);
 
 
     }
 
-
+    /*
     public void TriggerAction(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
     {
         Debug.Log("Trigger");
@@ -34,7 +33,7 @@ public class ControllerInput : MonoBehaviour {
         {
             gameControl.StartGame();
         }
-    }
+    }*/
 
 
     // Update is called once per frame

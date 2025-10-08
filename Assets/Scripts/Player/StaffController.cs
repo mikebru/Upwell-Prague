@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-using Valve.VR;
+//using Valve.VR;
 
 public class StaffController : MonoBehaviour {
 
@@ -13,7 +13,7 @@ public class StaffController : MonoBehaviour {
 	public LayerMask EffectedLayer;
 	public Transform AttractPoint;
 
-    private SteamVR_Behaviour_Pose Controller;
+  //  private SteamVR_Behaviour_Pose Controller;
 
     private Color CurrentColor;
 
@@ -27,7 +27,7 @@ public class StaffController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        Controller = GetComponent<SteamVR_Behaviour_Pose>();
+    //    Controller = GetComponent<SteamVR_Behaviour_Pose>();
 
         isColored = true;
 	}
@@ -38,10 +38,11 @@ public class StaffController : MonoBehaviour {
 
 		ApplyParticleMotion ();
 
-		CurrentSpeed = Controller.GetVelocity().magnitude;
+		//need to update - with new velocity data
+		CurrentSpeed = .5f;
 
 		if (CurrentSpeed > 1f) {
-			CurrentColor = RotationToColor (Controller.GetVelocity());
+			//CurrentColor = RotationToColor (Controller.GetVelocity());
 		}
 	}
 
@@ -63,7 +64,7 @@ public class StaffController : MonoBehaviour {
 
             if (useAttractPoint == true)
             {
-                speed = AttractPoint.GetComponent<Rigidbody>().velocity.magnitude;
+                speed = AttractPoint.GetComponent<Rigidbody>().linearVelocity.magnitude;
             }
 
             //create a list and sort it by distance 

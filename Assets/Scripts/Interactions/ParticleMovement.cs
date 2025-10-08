@@ -16,8 +16,8 @@ public class ParticleMovement : MonoBehaviour {
 	public void AddVelocity(Vector3 heading, Vector3 newVelocity)
 	{
 		//Debug.Log (Mathf.Abs (newVelocity.magnitude));
-		if (GetComponent<Rigidbody> ().velocity.magnitude < 1f && inZone == true) {
-			GetComponent<Rigidbody> ().velocity = heading * newVelocity.magnitude;
+		if (GetComponent<Rigidbody> ().linearVelocity.magnitude < 1f && inZone == true) {
+			GetComponent<Rigidbody> ().linearVelocity = heading * newVelocity.magnitude;
 		}
 	}
 
@@ -36,7 +36,7 @@ public class ParticleMovement : MonoBehaviour {
 		Vector3 newHeading = newDirection - this.transform.position;
 		newHeading = newHeading.normalized;
 
-		GetComponent<Rigidbody> ().velocity = newHeading * speed;
+		GetComponent<Rigidbody> ().linearVelocity = newHeading * speed;
 
 	}
 
@@ -69,7 +69,7 @@ public class ParticleMovement : MonoBehaviour {
 
 		while (transform.position.y < 5f) {
 			//give the object an upward movement
-			GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, 2f, GetComponent<Rigidbody>().velocity.z);
+			GetComponent<Rigidbody>().linearVelocity = new Vector3(GetComponent<Rigidbody>().linearVelocity.x, 2f, GetComponent<Rigidbody>().linearVelocity.z);
 			yield return new WaitForFixedUpdate ();
 		}
 
@@ -82,7 +82,7 @@ public class ParticleMovement : MonoBehaviour {
 
 		while (transform.position.y < 3.0f && this != null) {
 			//give the object an upward movement
-			GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, .5f, GetComponent<Rigidbody>().velocity.z);
+			GetComponent<Rigidbody>().linearVelocity = new Vector3(GetComponent<Rigidbody>().linearVelocity.x, .5f, GetComponent<Rigidbody>().linearVelocity.z);
 			yield return new WaitForFixedUpdate ();
 		}
 			
@@ -93,7 +93,7 @@ public class ParticleMovement : MonoBehaviour {
 
 		while (transform.position.y > .5f) {
 			//give the object an upward movement
-			GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, -.25f, GetComponent<Rigidbody>().velocity.z);
+			GetComponent<Rigidbody>().linearVelocity = new Vector3(GetComponent<Rigidbody>().linearVelocity.x, -.25f, GetComponent<Rigidbody>().linearVelocity.z);
 			yield return new WaitForFixedUpdate ();
 		}
 

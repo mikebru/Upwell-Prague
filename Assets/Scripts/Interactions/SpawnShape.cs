@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Valve.VR;
+//using Valve.VR;
 
 
 public class SpawnShape : MonoBehaviour {
@@ -18,7 +18,7 @@ public class SpawnShape : MonoBehaviour {
 
 	private Color CurrentColor;
 
-    private SteamVR_Behaviour_Pose Controller;
+    //private SteamVR_Behaviour_Pose Controller;
 
     public bool stopSpawning { get; set;}
 
@@ -34,8 +34,8 @@ public class SpawnShape : MonoBehaviour {
 
 		CurrentRate = StartRate;
 
-        Controller = GetComponent<SteamVR_Behaviour_Pose>();
-        Debug.Log(Controller);
+        //Controller = GetComponent<SteamVR_Behaviour_Pose>();
+       // Debug.Log(Controller);
 
     }
 
@@ -81,7 +81,13 @@ public class SpawnShape : MonoBehaviour {
             SpawnedShape.GetComponent<Particle_Color>().InactiveState();
         }
 
-		SpawnedShape.transform.localScale = Vector3.Lerp (new Vector3 (.02f, .02f, .02f), new Vector3 (.2f, .2f, .2f), (Controller.GetVelocity().magnitude + .01f)/3);
+
+
+		//THIS NEEDS TO BE UPDATED
+		//SpawnedShape.transform.localScale = Vector3.Lerp (new Vector3 (.02f, .02f, .02f), new Vector3 (.2f, .2f, .2f), (Controller.GetVelocity().magnitude + .01f)/3);
+
+
+
 
         //Debug.Log(Controller.GetVelocity());
 
