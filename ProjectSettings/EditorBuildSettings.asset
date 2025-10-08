@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PQ.unity
     guid: cc1b4f8445d024949b2d69ce020effe1
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6438e47fa73d44606a6e8951d41598b8,
+      type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: ba0d753b72149403a95aa388df8f5d45,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 18fe5f7e00695408caf607798f90758b,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 4012376aaedd049d09512b0f35a159e5,
+      type: 2}
+  m_UseUCBPForAssetBundles: 0
