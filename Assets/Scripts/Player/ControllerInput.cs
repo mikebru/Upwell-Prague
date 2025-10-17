@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ControllerInput : MonoBehaviour {
 
-   // private SteamVR_Behaviour_Pose Controller;
 
+    private StaffController StaffController;
    // public SteamVR_Action_Boolean BeginAction;
   //  public SteamVR_Input_Sources handType;
 
@@ -17,6 +17,12 @@ public class ControllerInput : MonoBehaviour {
 	void Start () {
 		gameControl = FindObjectOfType<Transitioner> ();
 		EffectControl = FindObjectOfType<MovementTimeControl> ();
+
+
+        StaffController = GetComponent<StaffController>();
+
+        
+
 
     //    Controller = GetComponent<SteamVR_Behaviour_Pose>();
 
@@ -38,6 +44,12 @@ public class ControllerInput : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+
+
+
+
+
+
         /*
 		if (Controller.GetPressDown (Valve.VR.EVRButtonId.k_EButton_Grip)) {
 

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.XR;
+
 //using Valve.VR;
 
 public class StaffController : MonoBehaviour {
@@ -13,9 +15,11 @@ public class StaffController : MonoBehaviour {
 	public LayerMask EffectedLayer;
 	public Transform AttractPoint;
 
-  //  private SteamVR_Behaviour_Pose Controller;
 
-    private Color CurrentColor;
+	public OVRInput.Controller controller;
+	//  private SteamVR_Behaviour_Pose Controller;
+
+	private Color CurrentColor;
 
 	public float CurrentSpeed { get; set;}
 
@@ -24,10 +28,11 @@ public class StaffController : MonoBehaviour {
 
 	public bool isColored {get; set;}
 
+	public Vector3 currentVelocity { get; set; }
+
 	// Use this for initialization
 	void Start () {
 
-    //    Controller = GetComponent<SteamVR_Behaviour_Pose>();
 
         isColored = true;
 	}
@@ -36,13 +41,16 @@ public class StaffController : MonoBehaviour {
 	void Update () {
 
 
+		//need to update - with new velocity data
+		CurrentSpeed = OVRInput.GetLocalControllerVelocity(controller).magnitude;
+		currentVelocity = OVRInput.GetLocalControllerVelocity(controller);
+
 		ApplyParticleMotion ();
 
-		//need to update - with new velocity data
-		CurrentSpeed = .5f;
+
 
 		if (CurrentSpeed > 1f) {
-			//CurrentColor = RotationToColor (Controller.GetVelocity());
+			CurrentColor = RotationToColor (OVRInput.GetLocalControllerVelocity(controller));
 		}
 	}
 
@@ -88,7 +96,7 @@ public class StaffController : MonoBehaviour {
 						hitList [i].transform.gameObject.GetComponent<ParticleMovement> ().AttractAngularVelocity (AttractPoint.position, CurrentSpeed);
 					}
 
-					//hits [i].transform.gameObject.GetComponent<ParticleMovement> ().AddVelocity (AttractPoint.forward.normalized , Controller.velocity);
+					hits [i].transform.gameObject.GetComponent<ParticleMovement> ().AddVelocity (AttractPoint.forward.normalized , currentVelocity);
 
 					if (isColored == true) {
 						hitList [i].transform.gameObject.GetComponent<TrailRenderer> ().startColor = CurrentColor;
@@ -108,7 +116,6 @@ public class StaffController : MonoBehaviour {
 
 	Color RotationToColor(Vector3 CurrentVector)
 	{
-
 
 		float R = (CurrentVector.x * CurrentVector.x / 10) + .1f;
 		float G = (CurrentVector.y * CurrentVector.y/ 10) + .1f;

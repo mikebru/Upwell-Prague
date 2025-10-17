@@ -21,7 +21,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56047
+57905
 -job-worker-count
 3
 -background-job-worker-count
@@ -68,7 +68,7 @@ Successfully changed project path to: /Users/michaelbruner/Documents/GitHub/Upwe
     "memorysetup-temp-allocator-size-gfx=262144"
 Player connection [8542691520]  Target information:
 
-Player connection [8542691520]  * "[IP] 192.168.1.151 [Port] 0 [Flags] 2 [Guid] 151299467 [EditorId] 151299467 [Version] 1048832 [Id] OSXEditor(0,PVFA-HL6Q1C9PVY) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8542691520]  * "[IP] 192.168.1.151 [Port] 0 [Flags] 2 [Guid] 147175900 [EditorId] 147175900 [Version] 1048832 [Id] OSXEditor(0,PVFA-HL6Q1C9PVY) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8542691520] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8542691520] Host joined alternative multi-casting on [225.0.0.222:34997]...
@@ -83,7 +83,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 34.76 ms, found 13 plugins.
+Refreshing native plugins compatible for Editor in 32.04 ms, found 13 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.59f2 (ef281c76c3c1)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.0.59f2/Unity.app/Contents/Resources/UnitySubsystems
@@ -101,51 +101,51 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/6000.0.59f2/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/6000.0.59f2/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/6000.0.59f2/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56361
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56730
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.59f2/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.59f2/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.59f2/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.004333 seconds.
-- Loaded All Assemblies, in  0.328 seconds
+Registered in 0.004782 seconds.
+- Loaded All Assemblies, in  0.306 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 192 ms
+Android Extension - Scanning For ADB Devices 361 ms
 Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.573 seconds
-Domain Reload Profiling: 902ms
-	BeginReloadAssembly (116ms)
+- Finished resetting the current domain, in  0.712 seconds
+Domain Reload Profiling: 1018ms
+	BeginReloadAssembly (104ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (133ms)
-		LoadAssemblies (118ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (130ms)
+		LoadAssemblies (105ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (129ms)
-			TypeCache.Refresh (127ms)
-				TypeCache.ScanAssembly (117ms)
+		AnalyzeDomain (126ms)
+			TypeCache.Refresh (125ms)
+				TypeCache.ScanAssembly (113ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (573ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (712ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (536ms)
+		SetupLoadedEditorAssemblies (676ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (353ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (47ms)
-			ProcessInitializeOnLoadAttributes (88ms)
-			ProcessInitializeOnLoadMethodAttributes (43ms)
+			InitializePlatformSupportModulesInManaged (478ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (53ms)
+			ProcessInitializeOnLoadAttributes (89ms)
+			ProcessInitializeOnLoadMethodAttributes (49ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -155,13 +155,13 @@ Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.696 seconds
+- Loaded All Assemblies, in  0.727 seconds
 Script 'CharacterController' has the same name as built-in Unity component.
 AddComponent and GetComponent will not work with this script.
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 7.80 ms, found 13 plugins.
+Refreshing native plugins compatible for Editor in 7.79 ms, found 13 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
@@ -169,8 +169,9 @@ Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 7.04 ms, found 13 plugins.
-10/10 17:38:06.546 {DEBUG}   [AnalyticsLifeTime] Pre initialization finished.
+Refreshing native plugins compatible for Editor in 8.50 ms, found 13 plugins.
+17/10 15:02:35.291 {DEBUG}   [AnalyticsLifeTime] Pre initialization finished.
+17/10 15:02:35.291 {DEBUG}   [AnalyticsLifeTime] Post-migration initialization finished.
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
@@ -184,35 +185,35 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.653 seconds
-Domain Reload Profiling: 2337ms
-	BeginReloadAssembly (113ms)
+- Finished resetting the current domain, in  1.505 seconds
+Domain Reload Profiling: 2213ms
+	BeginReloadAssembly (123ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (10ms)
+		CreateAndSetChildDomain (40ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (9ms)
 	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (511ms)
-		LoadAssemblies (372ms)
+	LoadAllAssembliesAndSetupDomain (525ms)
+		LoadAssemblies (390ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (190ms)
-			TypeCache.Refresh (137ms)
-				TypeCache.ScanAssembly (121ms)
-			BuildScriptInfoCaches (40ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (1653ms)
+		AnalyzeDomain (185ms)
+			TypeCache.Refresh (139ms)
+				TypeCache.ScanAssembly (120ms)
+			BuildScriptInfoCaches (34ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1506ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1553ms)
+		SetupLoadedEditorAssemblies (1408ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (16ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (99ms)
-			ProcessInitializeOnLoadAttributes (1286ms)
-			ProcessInitializeOnLoadMethodAttributes (148ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (98ms)
+			ProcessInitializeOnLoadAttributes (1153ms)
+			ProcessInitializeOnLoadMethodAttributes (136ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -379,111 +380,55 @@ WARNING: Shader If subshaders removal was intentional, you may have forgotten tu
 WARNING: Shader Unsupported: 'Hidden/Polybrush/Texture Blend Height' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Shader 'ASESampleShaders/Terrain/TerrainSnowCoverageFirstPass': dependency 'BaseMapShader' shader 'ASESampleShaders/TerrainBase' not found
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'ASESampleShaders/Terrain/TerrainSnowCoverageFirstPass': dependency 'BaseMapShader' shader 'ASESampleShaders/TerrainBase' not found
 [OVRPlugin][INFO] UnityPluginLoad called
 Launching external process: /Applications/Unity/Hub/Editor/6000.0.59f2/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.08 seconds
-Refreshing native plugins compatible for Editor in 6.60 ms, found 13 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.28 seconds
+Refreshing native plugins compatible for Editor in 6.18 ms, found 13 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 39 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6734 unused Assets / (11.9 MB). Loaded Objects now: 7631.
-Memory consumption went from 211.6 MB to 199.7 MB.
-Total: 24.926083 ms (FindLiveObjects: 0.909917 ms CreateObjectMapping: 0.399750 ms MarkObjects: 17.913500 ms  DeleteObjects: 5.702416 ms)
+Unloading 6734 unused Assets / (12.4 MB). Loaded Objects now: 7632.
+Memory consumption went from 212.0 MB to 199.6 MB.
+Total: 24.375916 ms (FindLiveObjects: 1.193875 ms CreateObjectMapping: 0.395959 ms MarkObjects: 15.997041 ms  DeleteObjects: 6.788583 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 230990.650356 seconds.
-  path: Assets/Projector/Materials/Blue_Mat.mat
-  artifactKey: Guid(ea93f95a2e7a6d8459222d7f83e52402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Projector/Materials/Blue_Mat.mat using Guid(ea93f95a2e7a6d8459222d7f83e52402) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'edd18ba003845e4e7a1635bdf04e5af6') in 0.424088417 seconds
+  Time since last request: 345994.378680 seconds.
+  path: Assets/Scripts/Player/StaffController.cs
+  artifactKey: Guid(cfa53e014e5b4cf4ba2de6c1fdc163b7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scripts/Player/StaffController.cs using Guid(cfa53e014e5b4cf4ba2de6c1fdc163b7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6adfd54ff2a3b44889270b45c41edbf2') in 0.052513416 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Oculus/OculusProjectConfig.asset
+  artifactKey: Guid(aed2390010b5a47f8bdb38a21279a680) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Oculus/OculusProjectConfig.asset using Guid(aed2390010b5a47f8bdb38a21279a680) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'efed05cedf12f5f7132d210fa3e85170') in 0.032476125 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000184 seconds.
-  path: Assets/AmplifyShaderEditor/Examples/Official/Outline/Outline.mat
-  artifactKey: Guid(250caa4384f289e40a17aa45fa41258d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor/Examples/Official/Outline/Outline.mat using Guid(250caa4384f289e40a17aa45fa41258d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '73c495a97fe339a3ceace1984abd148c') in 0.307146292 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000075 seconds.
-  path: Assets/Materials/Ceiling.mat
-  artifactKey: Guid(f30362eb83769df45a3af45c49c6349c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Ceiling.mat using Guid(f30362eb83769df45a3af45c49c6349c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e276a543cf666f9c7529af9fddb77e64') in 0.141167291 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/AmplifyShaderEditor/Examples/Community/2Sided/2Sided.mat
-  artifactKey: Guid(8ebbbf2c99a544ca780a2573ef1450fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor/Examples/Community/2Sided/2Sided.mat using Guid(8ebbbf2c99a544ca780a2573ef1450fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b0590f9f0bd89f1b222e01f5241981fa') in 0.270988292 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/AmplifyShaderEditor/Examples/Official/StencilExample/RefractionsPanels/AnimatedRefractionGreen.mat
-  artifactKey: Guid(b77b756311bd9db468e4adfd33652476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor/Examples/Official/StencilExample/RefractionsPanels/AnimatedRefractionGreen.mat using Guid(b77b756311bd9db468e4adfd33652476) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6d5a6c1d8db55e3e9e036af060fcf058') in 0.138329833 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000103 seconds.
-  path: Assets/AmplifyShaderEditor/Examples/Community/Skybox Cubemap Extended/Meshes/Materials/01 - Default.mat
-  artifactKey: Guid(800ec33a9c0fe564b9b72cdd97dc8d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor/Examples/Community/Skybox Cubemap Extended/Meshes/Materials/01 - Default.mat using Guid(800ec33a9c0fe564b9b72cdd97dc8d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '77dd5b6bfb3fa88594442fb540b5f792') in 0.133411833 seconds
+  Time since last request: 0.000212 seconds.
+  path: Assets/MetaXR/MetaXRProjectSettings.asset
+  artifactKey: Guid(20b07cafb190d467f8c0780cbe176a9c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MetaXR/MetaXRProjectSettings.asset using Guid(20b07cafb190d467f8c0780cbe176a9c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bb956e2eaa0cb8074c162888ad0f0797') in 0.005740083 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000176 seconds.
-  path: Assets/AmplifyShaderEditor/Examples/Official/AnimatedFire-ShaderFunction/AnimatedFire-ShaderFunction.mat
-  artifactKey: Guid(9c6c9fcb82afe874a825a9e680e694b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor/Examples/Official/AnimatedFire-ShaderFunction/AnimatedFire-ShaderFunction.mat using Guid(9c6c9fcb82afe874a825a9e680e694b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8af9c111b4cbcb7b03002e7daad5da91') in 0.231402458 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+  Time since last request: 0.000268 seconds.
+  path: Assets/Scripts/Interactions/SpawnShape.cs
+  artifactKey: Guid(167712536f442a34b9b950e036d40e41) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scripts/Interactions/SpawnShape.cs using Guid(167712536f442a34b9b950e036d40e41) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5cd065a613ff717e371725ab4ab67e10') in 0.005188959 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000258 seconds.
-  path: Assets/AmplifyShaderEditor/Examples/Official/CustomOutlineToon/CustomOutlineToonStyle1.mat
-  artifactKey: Guid(1f272f80ca17a4f44863558bf77325c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor/Examples/Official/CustomOutlineToon/CustomOutlineToonStyle1.mat using Guid(1f272f80ca17a4f44863558bf77325c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2bda0ffe370adee89bf75b3c8316d686') in 0.556608584 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.279362 seconds.
-  path: Assets/Materials/AttractPoint_Mat.mat
-  artifactKey: Guid(8395e72db4132d344a3d27fe509c224a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/AttractPoint_Mat.mat using Guid(8395e72db4132d344a3d27fe509c224a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a2730013a845ad79126a5d64d337c2be') in 0.242290916 seconds
+  Time since last request: 139.442320 seconds.
+  path: Assets/Scenes/VR-Wellness.unity
+  artifactKey: Guid(17b5e5c344c55447b81d2705c462a650) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/VR-Wellness.unity using Guid(17b5e5c344c55447b81d2705c462a650) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5a0c9404eeb90bf763a19130f039670b') in 0.016678209 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/Materials/Trail_Mat.mat
-  artifactKey: Guid(05e01553e33834e48af94ee753867b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Trail_Mat.mat using Guid(05e01553e33834e48af94ee753867b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5c2196a63bf933fe74fa1065e9dd0d20') in 0.066823458 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/AmplifyShaderEditor/Examples/Community/Skybox Cubemap Extended/Materials/LowPoly - FirTreeVariation.mat
-  artifactKey: Guid(a243cdacb4634124b1ce2b0b7cb5d95d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor/Examples/Community/Skybox Cubemap Extended/Materials/LowPoly - FirTreeVariation.mat using Guid(a243cdacb4634124b1ce2b0b7cb5d95d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3b42a982fb45f9ee411719a0bcc8fa4a') in 0.094637167 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000168 seconds.
-  path: Assets/Materials/Trail_Mat 1.mat
-  artifactKey: Guid(3b26cb93f4be3a04daef9e86f107dcff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Trail_Mat 1.mat using Guid(3b26cb93f4be3a04daef9e86f107dcff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '09f662c4de2593b2127115ac41d55ea2') in 0.0251785 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 

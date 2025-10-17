@@ -18,7 +18,7 @@ public class SpawnShape : MonoBehaviour {
 
 	private Color CurrentColor;
 
-    //private SteamVR_Behaviour_Pose Controller;
+	private StaffController StaffController;
 
     public bool stopSpawning { get; set;}
 
@@ -30,11 +30,11 @@ public class SpawnShape : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		TransitionControl = FindObjectOfType<Transitioner> ();
+		TransitionControl = FindFirstObjectByType<Transitioner> ();
 
 		CurrentRate = StartRate;
 
-        //Controller = GetComponent<SteamVR_Behaviour_Pose>();
+		StaffController = GetComponent<StaffController>();
        // Debug.Log(Controller);
 
     }
@@ -83,8 +83,7 @@ public class SpawnShape : MonoBehaviour {
 
 
 
-		//THIS NEEDS TO BE UPDATED
-		//SpawnedShape.transform.localScale = Vector3.Lerp (new Vector3 (.02f, .02f, .02f), new Vector3 (.2f, .2f, .2f), (Controller.GetVelocity().magnitude + .01f)/3);
+		SpawnedShape.transform.localScale = Vector3.Lerp (new Vector3 (.02f, .02f, .02f), new Vector3 (.2f, .2f, .2f), (StaffController.CurrentSpeed + .01f)/3);
 
 
 
