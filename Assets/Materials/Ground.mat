@@ -2,19 +2,24 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Ground
   m_Shader: {fileID: 4800000, guid: 8376a1980d6972c46bdfa9f1036dc3ba, type: 3}
-  m_ShaderKeywords: 
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -48,11 +53,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _EmissionTexture:
         m_Texture: {fileID: 2800000, guid: 9fbef4b79ca3b784ba023cb1331520d5, type: 3}
-        m_Scale: {x: 5, y: 5}
+        m_Scale: {x: 10, y: 5}
         m_Offset: {x: 0, y: 0}
     - _FlowMap:
         m_Texture: {fileID: 2800000, guid: cd460ee4ac5c1e746b7a734cc7cc64dd, type: 3}
-        m_Scale: {x: 5, y: 5}
+        m_Scale: {x: 10, y: 5}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
@@ -78,13 +83,14 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _Displace: 0
     - _DstBlend: 0
-    - _EdgeLength: 15
+    - _EdgeLength: 27.5
     - _GlossMapScale: 1
     - _Glossiness: 0.235
     - _GlossyReflections: 1
@@ -107,10 +113,12 @@ Material:
     m_Colors:
     - _Color: {r: 0.015686275, g: 0.078431375, b: 0.16078432, a: 1}
     - _Emission2: {r: 0, g: 0, b: 0, a: 1}
-    - _EmissionColor: {r: 0.09964823, g: 0, b: 0.2627451, a: 1}
+    - _EmissionColor: {r: 0, g: 0.31996363, b: 0.36477977, a: 1}
     - _NormalValues: {r: -1.4, g: 0, b: 0, a: 0}
     - _Remap: {r: 0.06, g: 0.09, b: 0, a: 0.06}
     - _Til: {r: 1, g: 1, b: 0, a: 0}
-    - _Tiling: {r: 80, g: 80, b: 10, a: 10}
+    - _Tiling: {r: 100, g: 80, b: 30, a: 30}
     - _Tint: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 0}
     - _VertexDisplace: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
