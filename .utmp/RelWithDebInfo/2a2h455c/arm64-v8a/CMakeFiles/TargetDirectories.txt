@@ -1,0 +1,5 @@
+C:/Users/micha/Documents/Github/Upwell-Prague/.utmp/RelWithDebInfo/2a2h455c/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/micha/Documents/Github/Upwell-Prague/.utmp/RelWithDebInfo/2a2h455c/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/micha/Documents/Github/Upwell-Prague/.utmp/RelWithDebInfo/2a2h455c/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Users/micha/Documents/Github/Upwell-Prague/.utmp/RelWithDebInfo/2a2h455c/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/micha/Documents/Github/Upwell-Prague/.utmp/RelWithDebInfo/2a2h455c/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir

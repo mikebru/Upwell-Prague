@@ -91,6 +91,7 @@ Material:
     - _Displace: 0
     - _DstBlend: 0
     - _EdgeLength: 27.5
+    - _EmissionStrength: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.235
     - _GlossyReflections: 1
@@ -112,10 +113,10 @@ Material:
     - __dirty: 0
     m_Colors:
     - _Color: {r: 0.015686275, g: 0.078431375, b: 0.16078432, a: 1}
-    - _Emission2: {r: 0, g: 0, b: 0, a: 1}
-    - _EmissionColor: {r: 0, g: 0.31996363, b: 0.36477977, a: 1}
+    - _Emission2: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 1}
+    - _EmissionColor: {r: 0.48461285, g: 0.67295593, b: 0.60842943, a: 1}
     - _NormalValues: {r: -1.4, g: 0, b: 0, a: 0}
-    - _Remap: {r: 0.06, g: 0.09, b: 0, a: 0.06}
+    - _Remap: {r: 0.06, g: 0.09, b: 0, a: 0.13}
     - _Til: {r: 1, g: 1, b: 0, a: 0}
     - _Tiling: {r: 100, g: 80, b: 30, a: 30}
     - _Tint: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 0}
