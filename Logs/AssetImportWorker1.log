@@ -2,7 +2,7 @@ Using pre-set license
 Built from '6000.0/respin/6000.0.59f1-063c55f2fd0f' branch; Version is '6000.0.59f2 (ef281c76c3c1) revision 15673372'; Using compiler version '193933523'; Build Type 'Release'
 OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 32474 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2025-10-30T08:06:12Z
+Date: 2025-10-30T08:20:58Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.0.59f2\Editor\Unity.exe
@@ -16,7 +16,7 @@ C:/Users/micha/Documents/Github/Upwell-Prague
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-65105
+49456
 -job-worker-count
 9
 -background-job-worker-count
@@ -62,12 +62,12 @@ C:/Users/micha/Documents/Github/Upwell-Prague
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [28860]  Target information:
+Player connection [18044]  Target information:
 
-Player connection [28860]  * "[IP] 192.168.1.241 [Port] 0 [Flags] 2 [Guid] 1416197590 [EditorId] 1416197590 [Version] 1048832 [Id] WindowsEditor(7,TheCooler) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [18044]  * "[IP] 192.168.1.241 [Port] 0 [Flags] 2 [Guid] 3627979124 [EditorId] 3627979124 [Version] 1048832 [Id] WindowsEditor(7,TheCooler) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [28860] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [28860] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [18044] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [18044] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 9
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -79,7 +79,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 8.00 ms, found 12 plugins.
+Refreshing native plugins compatible for Editor in 9.42 ms, found 12 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.59f2 (ef281c76c3c1)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/Resources/UnitySubsystems
@@ -98,46 +98,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56896
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56344
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.002151 seconds.
-- Loaded All Assemblies, in  0.392 seconds
+Registered in 0.002630 seconds.
+- Loaded All Assemblies, in  0.247 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 193 ms
+Android Extension - Scanning For ADB Devices 173 ms
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.492 seconds
-Domain Reload Profiling: 883ms
-	BeginReloadAssembly (146ms)
+- Finished resetting the current domain, in  0.399 seconds
+Domain Reload Profiling: 645ms
+	BeginReloadAssembly (83ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (37ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (161ms)
-		LoadAssemblies (148ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (103ms)
+		LoadAssemblies (82ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (154ms)
-			TypeCache.Refresh (153ms)
-				TypeCache.ScanAssembly (137ms)
+		AnalyzeDomain (101ms)
+			TypeCache.Refresh (100ms)
+				TypeCache.ScanAssembly (90ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (492ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (399ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (454ms)
+		SetupLoadedEditorAssemblies (379ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (269ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (50ms)
-			ProcessInitializeOnLoadAttributes (92ms)
-			ProcessInitializeOnLoadMethodAttributes (40ms)
+			InitializePlatformSupportModulesInManaged (235ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (35ms)
+			ProcessInitializeOnLoadAttributes (75ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -147,20 +147,20 @@ Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.615 seconds
+- Loaded All Assemblies, in  0.534 seconds
 Script 'CharacterController' has the same name as built-in Unity component.
 AddComponent and GetComponent will not work with this script.
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 7.51 ms, found 12 plugins.
+Refreshing native plugins compatible for Editor in 8.96 ms, found 12 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 6.33 ms, found 12 plugins.
+Refreshing native plugins compatible for Editor in 7.25 ms, found 12 plugins.
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
@@ -174,39 +174,39 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.942 seconds
-Domain Reload Profiling: 1555ms
-	BeginReloadAssembly (105ms)
+- Finished resetting the current domain, in  0.950 seconds
+Domain Reload Profiling: 1481ms
+	BeginReloadAssembly (120ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (18ms)
-	RebuildCommonClasses (20ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (23ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (20ms)
-	LoadAllAssembliesAndSetupDomain (461ms)
-		LoadAssemblies (279ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (358ms)
+		LoadAssemblies (254ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (240ms)
-			TypeCache.Refresh (177ms)
-				TypeCache.ScanAssembly (154ms)
-			BuildScriptInfoCaches (51ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (943ms)
+		AnalyzeDomain (166ms)
+			TypeCache.Refresh (117ms)
+				TypeCache.ScanAssembly (101ms)
+			BuildScriptInfoCaches (38ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (950ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (849ms)
+		SetupLoadedEditorAssemblies (850ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (81ms)
-			ProcessInitializeOnLoadAttributes (643ms)
-			ProcessInitializeOnLoadMethodAttributes (111ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (95ms)
+			ProcessInitializeOnLoadAttributes (626ms)
+			ProcessInitializeOnLoadMethodAttributes (113ms)
 			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (3ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
 WARNING: Shader Unsupported: 'URP/UI/Prerendered Opaque' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
@@ -264,221 +264,517 @@ WARNING: Shader If subshaders removal was intentional, you may have forgotten tu
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Shader 'ASESampleShaders/Terrain/TerrainSnowCoverageFirstPass': dependency 'BaseMapShader' shader 'ASESampleShaders/TerrainBase' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 6.23 ms, found 12 plugins.
+Refreshing native plugins compatible for Editor in 6.08 ms, found 12 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6716 unused Assets / (5.9 MB). Loaded Objects now: 7653.
-Memory consumption went from 188.3 MB to 182.4 MB.
-Total: 14.717100 ms (FindLiveObjects: 0.621300 ms CreateObjectMapping: 0.516400 ms MarkObjects: 10.781600 ms  DeleteObjects: 2.796400 ms)
+Unloading 6716 unused Assets / (5.7 MB). Loaded Objects now: 7653.
+Memory consumption went from 188.4 MB to 182.7 MB.
+Total: 14.224100 ms (FindLiveObjects: 0.698100 ms CreateObjectMapping: 0.459800 ms MarkObjects: 10.521400 ms  DeleteObjects: 2.543300 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 24117.261641 seconds.
-  path: Assets/Scenes/VR-Wellness.unity
-  artifactKey: Guid(17b5e5c344c55447b81d2705c462a650) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Scenes/VR-Wellness.unity using Guid(17b5e5c344c55447b81d2705c462a650) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5ed05c954989c35e4cf215646bdaa1e9') in 0.0507194 seconds
+  Time since last request: 24785.948654 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/Tessellation/Tessellation.mat
+  artifactKey: Guid(efb669a245f17384c88824d769d0087c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/Tessellation/Tessellation.mat using Guid(efb669a245f17384c88824d769d0087c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4574d7b48d142b68b54e86ae5cb97085') in 0.2257128 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/PositionCutoff/LocalPosCutOff.mat
+  artifactKey: Guid(fed8c9d33a691084c801573feeed5a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/PositionCutoff/LocalPosCutOff.mat using Guid(fed8c9d33a691084c801573feeed5a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c48ca5a055c8eb9b6a0ebf17eb20bb27') in 0.0964781 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/Dithering/DitheringFadeBlueNoise.mat
+  artifactKey: Guid(0a9a111a2ce97bd4f8f5b2e069c2014b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/Dithering/DitheringFadeBlueNoise.mat using Guid(0a9a111a2ce97bd4f8f5b2e069c2014b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '686edb79cae125d1c762c0f736e70998') in 0.0925455 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Assets/Materials/BrushedMetal.mat
+  artifactKey: Guid(e6fb7eca82ae15848ac7abe815d2dc0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Assets/Materials/BrushedMetal.mat using Guid(e6fb7eca82ae15848ac7abe815d2dc0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7509e9af48fcf58cfda4030784356b1d') in 0.097589 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/StencilExample/Portals/Portal03/StencilMask03.mat
+  artifactKey: Guid(c7b3018ad495c6b479f2e3f8564aa6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/StencilExample/Portals/Portal03/StencilMask03.mat using Guid(c7b3018ad495c6b479f2e3f8564aa6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f7d356986c58f5599b3bc9a4d75a2181') in 0.0592502 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.461 seconds
-Script 'CharacterController' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 6.62 ms, found 12 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 6.82 ms, found 12 plugins.
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.833 seconds
-Domain Reload Profiling: 1296ms
-	BeginReloadAssembly (153ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (47ms)
-	RebuildCommonClasses (20ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (15ms)
-	LoadAllAssembliesAndSetupDomain (267ms)
-		LoadAssemblies (220ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (103ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (86ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (834ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (729ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (84ms)
-			ProcessInitializeOnLoadAttributes (521ms)
-			ProcessInitializeOnLoadMethodAttributes (111ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-WARNING: Shader Unsupported: 'URP/UI/Prerendered Opaque' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'URP/UI/Prerendered Opaque' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'URP/UI/Prerendered' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'URP/UI/Prerendered' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Hidden/Simulation/Synthetic Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/Room X-Ray' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'EnvironmentDepth/URP/OcclusionUnlit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'EnvironmentDepth/URP/OcclusionUnlit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/Standard Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/URP/Room X-Ray' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Simulation/URP/Lit' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Hidden/Simulation/URP/Synthetic' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Shader 'ASESampleShaders/Terrain/TerrainSnowCoverageFirstPass': dependency 'BaseMapShader' shader 'ASESampleShaders/TerrainBase' not found
-Refreshing native plugins compatible for Editor in 7.59 ms, found 12 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6713 unused Assets / (6.4 MB). Loaded Objects now: 7655.
-Memory consumption went from 192.1 MB to 185.7 MB.
-Total: 13.644300 ms (FindLiveObjects: 0.582400 ms CreateObjectMapping: 0.480500 ms MarkObjects: 9.753900 ms  DeleteObjects: 2.826200 ms)
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/ProCore/Polybrush/Materials/Texture Blend with Vertex Color.mat
+  artifactKey: Guid(4b0cb7a0afb01f54da4afe707dc48a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProCore/Polybrush/Materials/Texture Blend with Vertex Color.mat using Guid(4b0cb7a0afb01f54da4afe707dc48a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)Shader error in 'Polybrush/Texture Blend With Vertex Color': invalid subscript 'boxMax' at Assets/ProCore/Polybrush/Shader/z_TextureBlendWithVertexColor.shader(144) (on d3d11)
 
-Prepare: number of updated asset objects reloaded= 0
+Compiling Subshader: 0, Pass: FORWARD, Vertex program with DIRECTIONAL DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF LIGHTMAP_OFF LIGHTPROBE_SH
+Platform defines: SHADER_API_MOBILE UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PASS_FORWARDBASE UNITY_PBS_USE_BRDF2 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
+Disabled keywords: DIRLIGHTMAP_COMBINED DIRLIGHTMAP_SEPARATE DYNAMICLIGHTMAP_ON FOG_EXP FOG_EXP2 FOG_LINEAR LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 SHADOWS_SCREEN SHADOWS_SHADOWMASK UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON
+Shader error in 'Polybrush/Texture Blend With Vertex Color': invalid subscript 'boxMax' at Assets/ProCore/Polybrush/Shader/z_TextureBlendWithVertexColor.shader(144) (on d3d11)
+
+Compiling Subshader: 0, Pass: FORWARD, Vertex program with DIRECTIONAL DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF LIGHTMAP_OFF LIGHTPROBE_SH
+Platform defines: SHADER_API_MOBILE UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PASS_FORWARDBASE UNITY_PBS_USE_BRDF2 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
+Disabled keywords: DIRLIGHTMAP_COMBINED DIRLIGHTMAP_SEPARATE DYNAMICLIGHTMAP_ON FOG_EXP FOG_EXP2 FOG_LINEAR LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 SHADOWS_SCREEN SHADOWS_SHADOWMASK UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON
+ -> (artifact id: '2b154b5f9ba639a0bf4f2729a33860de') in 0.0655401 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
 ========================================================================
 Received Import Request.
-  Time since last request: 58.558718 seconds.
-  path: Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/HandTracking/Materials/SkeletonBoneMaterial.mat
-  artifactKey: Guid(9c05c5a6e4902ff4082cfb34e5b64b2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/HandTracking/Materials/SkeletonBoneMaterial.mat using Guid(9c05c5a6e4902ff4082cfb34e5b64b2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3cfc93a3253ef23f76bfae8efc7b4bf7') in 0.0759193 seconds
+  Time since last request: 0.000014 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/TextureArray/TextureArray.mat
+  artifactKey: Guid(0f572993ab788a346aea45f2f797b7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/TextureArray/TextureArray.mat using Guid(0f572993ab788a346aea45f2f797b7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3cac953fdaebcb3b30eb532402fc369f') in 0.1164302 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Projector/Materials/Render_Mat.mat
+  artifactKey: Guid(8d6b8a29d3dc564449b0e735868ed2a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Projector/Materials/Render_Mat.mat using Guid(8d6b8a29d3dc564449b0e735868ed2a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '81197f78eb1369c2f33c39972a5578d4') in 0.0155118 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/OrientationBasedSprite/OrientationBasedSprite.mat
+  artifactKey: Guid(b492ac38acf06614fb49949573c5784b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/OrientationBasedSprite/OrientationBasedSprite.mat using Guid(b492ac38acf06614fb49949573c5784b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9cf00f56e009c552ee2a824691b79a2f') in 0.0666433 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Assets/Materials/CalibrationFloor.mat
+  artifactKey: Guid(da2c233b59617744588b18235eda5f56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Assets/Materials/CalibrationFloor.mat using Guid(da2c233b59617744588b18235eda5f56) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '69ead1750db977c019b103bc7bf2cbef') in 0.1074085 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/TerrainSnowCoverage/TerrainBase.mat
+  artifactKey: Guid(8bbada7e44ed15e49a4b035ee972ea25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/TerrainSnowCoverage/TerrainBase.mat using Guid(8bbada7e44ed15e49a4b035ee972ea25) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ca3060429db7ef87569ff25f8e37d80d') in 0.0737836 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/TerrainSnowCoverage/TerrainWaterSample.mat
+  artifactKey: Guid(862ceb2f89982ed46b014e40237c8c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/TerrainSnowCoverage/TerrainWaterSample.mat using Guid(862ceb2f89982ed46b014e40237c8c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e297dbb14558e40788ee84276af9a82a') in 0.0972122 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000015 seconds.
-  path: Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/HandTracking/Materials/SystemGestureSkeletonBoneMaterial.mat
-  artifactKey: Guid(38beab19e7c1f7947afac78fd60f90b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlockData/HandTracking/Materials/SystemGestureSkeletonBoneMaterial.mat using Guid(38beab19e7c1f7947afac78fd60f90b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c4ab2cb1676316f7f3bdc3c37bd140b6') in 0.0110952 seconds
+  path: Assets/Dome capture/DomeModel.fbx
+  artifactKey: Guid(be4c024fd9d0c754fab67f3f771bcca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dome capture/DomeModel.fbx using Guid(be4c024fd9d0c754fab67f3f771bcca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3bde37ac289c265eb069d6016bdb263a') in 0.0365652 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Assets/Materials/RedLight.mat
+  artifactKey: Guid(ef6485dba60f84543828bcea211e7190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Assets/Materials/RedLight.mat using Guid(ef6485dba60f84543828bcea211e7190) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e3cf66057cc24759ec1ae9e52b8def94') in 0.0118177 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/StencilExample/Portals/Portal01/StencilDiffuse01.mat
+  artifactKey: Guid(9f47f529fdeddd948a2d2722f73e6ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/StencilExample/Portals/Portal01/StencilDiffuse01.mat using Guid(9f47f529fdeddd948a2d2722f73e6ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '44251c895b987911f202e177e1bb79af') in 0.0761025 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Community/Skybox Cubemap Extended/Meshes/Materials/01 - Default.mat
+  artifactKey: Guid(800ec33a9c0fe564b9b72cdd97dc8d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Community/Skybox Cubemap Extended/Meshes/Materials/01 - Default.mat using Guid(800ec33a9c0fe564b9b72cdd97dc8d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '341c586152463400fbd4644024d312e2') in 0.011811 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Community/Volumetric Pixelization/Dull.mat
+  artifactKey: Guid(4526c7347dbbfe24aa85555e20c6fbb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Community/Volumetric Pixelization/Dull.mat using Guid(4526c7347dbbfe24aa85555e20c6fbb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c061fa8b14a0d64a91681a3cd91d6722') in 0.0158916 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Assets/Models/Materials/No Name.mat
+  artifactKey: Guid(aee9db7cb859de24f94e1290bccd1a3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Assets/Models/Materials/No Name.mat using Guid(aee9db7cb859de24f94e1290bccd1a3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ebe8ef61cb79b1123afd93f2d3468472') in 0.0151173 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/CubemapReflections/CubemapReflections.mat
+  artifactKey: Guid(2c299f827334e9c459a60931aea62260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/CubemapReflections/CubemapReflections.mat using Guid(2c299f827334e9c459a60931aea62260) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2b0aae928321b0b2dabbe14205549c13') in 0.1246056 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Assets/Models/Materials/Terrain.mat
+  artifactKey: Guid(38fb494b56c8482429f78c253e0ce129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Assets/Models/Materials/Terrain.mat using Guid(38fb494b56c8482429f78c253e0ce129) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '486ac8b328e321c475fb90029d9814ef') in 0.0117513 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/StencilExample/Portals/Portal02/StencilMask02.mat
+  artifactKey: Guid(344696733b065c646b18c1aa2eacfdb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/StencilExample/Portals/Portal02/StencilMask02.mat using Guid(344696733b065c646b18c1aa2eacfdb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7f63639f6c51c25d78890e6a75ff1d71') in 0.05998 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/AnimatedFire-ShaderFunction/AnimatedFire-ShaderFunction.mat
+  artifactKey: Guid(9c6c9fcb82afe874a825a9e680e694b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/AnimatedFire-ShaderFunction/AnimatedFire-ShaderFunction.mat using Guid(9c6c9fcb82afe874a825a9e680e694b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dc4c5fe9ac2941be2b31aa98a521ee44') in 0.0904667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/DoubleLayerCustomSurface/DoubleLayerCustomSurface.mat
+  artifactKey: Guid(846aec4914103104d99e9e31a217b548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/DoubleLayerCustomSurface/DoubleLayerCustomSurface.mat using Guid(846aec4914103104d99e9e31a217b548) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f8e71ad1f61bf74f9d3d6a131415c56b') in 0.1213718 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/SimpleTerrain/SimpleTerrainBase.mat
+  artifactKey: Guid(409f4d86c1ef636439031a4ea31e0a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/SimpleTerrain/SimpleTerrainBase.mat using Guid(409f4d86c1ef636439031a4ea31e0a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '25b030b7f2fb34475e8dbd80ee606500') in 0.0701793 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Assets/Models/Materials/CalibrationRGBScale.mat
+  artifactKey: Guid(bf5ec6293f659e24c86c4c668128446b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Assets/Models/Materials/CalibrationRGBScale.mat using Guid(bf5ec6293f659e24c86c4c668128446b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4e3eec98e2a60b4a160dbb5192e0c788') in 0.023192 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/StencilExample/RefractionsPanels/AnimatedRefractionBlue.mat
+  artifactKey: Guid(ca405353e0ac8b349866703f4ca689fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/StencilExample/RefractionsPanels/AnimatedRefractionBlue.mat using Guid(ca405353e0ac8b349866703f4ca689fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5a3f3d6387216231cba5e2709d799019') in 0.0752502 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/SimpleRefraction/SimpleRefraction.mat
+  artifactKey: Guid(58c94d2f48acdc049a53b4ca53d6d98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/SimpleRefraction/SimpleRefraction.mat using Guid(58c94d2f48acdc049a53b4ca53d6d98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b44ee6da189a58656c389fb9969fa0b') in 0.0685666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/ObjectNormalRefraction/ObjectNormalRefraction.mat
+  artifactKey: Guid(f1a0a645876302547b608ce881c94e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/ObjectNormalRefraction/ObjectNormalRefraction.mat using Guid(f1a0a645876302547b608ce881c94e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '446d052610934a5248299f15725c4317') in 0.0992518 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/StencilExample/Portals/Portal01/StencilMask01.mat
+  artifactKey: Guid(6f870834077d59b44ac421c36f619d59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/StencilExample/Portals/Portal01/StencilMask01.mat using Guid(6f870834077d59b44ac421c36f619d59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8c54595a6d18f4253601fcf941afa695') in 0.0563246 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/TemplateExamples/Sprites/SimpleSprite/SimpleSprite.mat
+  artifactKey: Guid(e95ef1930e4ede347a15b7ed2d6d676e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/TemplateExamples/Sprites/SimpleSprite/SimpleSprite.mat using Guid(e95ef1930e4ede347a15b7ed2d6d676e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a9b77d02aa972d35c3542a55da684b18') in 0.0231616 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/ReflectRefractSoapBubble/ReflectRefractSoapBubble.mat
+  artifactKey: Guid(a844987c9f2e7334abaa34f12feda3b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/ReflectRefractSoapBubble/ReflectRefractSoapBubble.mat using Guid(a844987c9f2e7334abaa34f12feda3b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '812f43a9d28066ed8af4377780f53a58') in 0.1171241 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/MultiPassDistortion/Mat00.mat
+  artifactKey: Guid(d88fdd5d7ac40c545bf2eda23795efd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/MultiPassDistortion/Mat00.mat using Guid(d88fdd5d7ac40c545bf2eda23795efd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0749e2c76dc2bc7a8fe247279c780f1d') in 0.0106339 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Projector/Materials/Blue_Mat.mat
+  artifactKey: Guid(ea93f95a2e7a6d8459222d7f83e52402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Projector/Materials/Blue_Mat.mat using Guid(ea93f95a2e7a6d8459222d7f83e52402) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cac6951c2a4ced4eac3edaaf6a111608') in 0.0601609 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/SimpleTerrain/SimpleTerrainAddPass.mat
+  artifactKey: Guid(ca9b547cf3e17704e8b5be99df435abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/SimpleTerrain/SimpleTerrainAddPass.mat using Guid(ca9b547cf3e17704e8b5be99df435abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6ed454a09638b5c54f707e25c4c83bfc') in 0.0970772 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Community/HologramSimple/Hologram Simple.mat
+  artifactKey: Guid(b422c600f1c3941b8bc7e95db33476ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Community/HologramSimple/Hologram Simple.mat using Guid(b422c600f1c3941b8bc7e95db33476ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '90d88c6302eb4d55f1ef7b7a3a2edaad') in 0.0795292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/StencilExample/Portals/Portal02/StencilDiffuse02.mat
+  artifactKey: Guid(11cdb862d5ba68c4eae526765099305b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/StencilExample/Portals/Portal02/StencilDiffuse02.mat using Guid(11cdb862d5ba68c4eae526765099305b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bf609cced3032fe8029ed41add46bcec') in 0.0676566 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/SimplePotionLiquid/SimplePotionLiquid.mat
+  artifactKey: Guid(f01464ad7ed896446ab44f7230852a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/SimplePotionLiquid/SimplePotionLiquid.mat using Guid(f01464ad7ed896446ab44f7230852a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '28d15911e1fee6e8b616ee522507e2c5') in 0.0625639 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Dome capture/DomeSurface.mat
+  artifactKey: Guid(c503eade0637c1145905027bb8af9afb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dome capture/DomeSurface.mat using Guid(c503eade0637c1145905027bb8af9afb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '37cad8e416ee8b11336f776cefbfc063') in 0.014699 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/ProCore/Polybrush/Materials/TriPlanar Texture Blend Legacy.mat
+  artifactKey: Guid(3f565e33b40bc8b4dbe6e7ce597c92d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProCore/Polybrush/Materials/TriPlanar Texture Blend Legacy.mat using Guid(3f565e33b40bc8b4dbe6e7ce597c92d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2d1992269c3d44a4a0ab3833a8702aea') in 0.0652971 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/TriplanarProjection/TriplanarProjection.mat
+  artifactKey: Guid(663d512de06d4e24db5205c679f394cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/TriplanarProjection/TriplanarProjection.mat using Guid(663d512de06d4e24db5205c679f394cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6dd0b201114988aed320b0d72eb235aa') in 0.1014977 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/ReadFromAtlasTiled/ImprovedReadFromAtlasTiled.mat
+  artifactKey: Guid(941b31b251ea8e74f9198d788a604c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/ReadFromAtlasTiled/ImprovedReadFromAtlasTiled.mat using Guid(941b31b251ea8e74f9198d788a604c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b263039ff2f4bb426064c09f0b1b24f0') in 0.0668797 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/ProCore/Polybrush/Materials/Standard Texture Blend Modulate.mat
+  artifactKey: Guid(d735613a999f147319397d413c99a2bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProCore/Polybrush/Materials/Standard Texture Blend Modulate.mat using Guid(d735613a999f147319397d413c99a2bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)Shader error in 'Polybrush/Texture Blend Modulate': invalid subscript 'boxMax' at Assets/ProCore/Polybrush/Shader/z_TextureBlendModulate.shader(289) (on d3d11)
+
+Compiling Subshader: 0, Pass: FORWARD, Vertex program with DIRECTIONAL DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF LIGHTMAP_OFF LIGHTPROBE_SH
+Platform defines: SHADER_API_MOBILE UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PASS_FORWARDBASE UNITY_PBS_USE_BRDF2 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
+Disabled keywords: DIRLIGHTMAP_COMBINED DIRLIGHTMAP_SEPARATE DYNAMICLIGHTMAP_ON FOG_EXP FOG_EXP2 FOG_LINEAR LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 SHADOWS_SCREEN SHADOWS_SHADOWMASK UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON
+Shader error in 'Polybrush/Texture Blend Modulate': invalid subscript 'boxMax' at Assets/ProCore/Polybrush/Shader/z_TextureBlendModulate.shader(289) (on d3d11)
+
+Compiling Subshader: 0, Pass: FORWARD, Vertex program with DIRECTIONAL DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF LIGHTMAP_OFF LIGHTPROBE_SH
+Platform defines: SHADER_API_MOBILE UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PASS_FORWARDBASE UNITY_PBS_USE_BRDF2 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
+Disabled keywords: DIRLIGHTMAP_COMBINED DIRLIGHTMAP_SEPARATE DYNAMICLIGHTMAP_ON FOG_EXP FOG_EXP2 FOG_LINEAR LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 SHADOWS_SCREEN SHADOWS_SHADOWMASK UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON
+ -> (artifact id: '9bc7b8f595971f370ffc02f96372f0f2') in 0.0611348 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/SimpleGPUInstancing/SimpleGPUInstancing.mat
+  artifactKey: Guid(9d609a7c8d00c7c4c9bdcdcdba154b81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/SimpleGPUInstancing/SimpleGPUInstancing.mat using Guid(9d609a7c8d00c7c4c9bdcdcdba154b81) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '84350e2b6310cff5515543a8d6aab1cf') in 0.0636154 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Community/Dissolve Burn/DissolveBurn.mat
+  artifactKey: Guid(f144f2d7ff3daf349a2b7f0fd81ec8ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Community/Dissolve Burn/DissolveBurn.mat using Guid(f144f2d7ff3daf349a2b7f0fd81ec8ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9cf20564730dd6e1e59398947124e5f1') in 0.0835146 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/ProCore/Polybrush/Example/Example Detail Meshes/Source/RockMesh.mat
+  artifactKey: Guid(2716c57d7fb46e24097d54a784463b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProCore/Polybrush/Example/Example Detail Meshes/Source/RockMesh.mat using Guid(2716c57d7fb46e24097d54a784463b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '15d39e20acb049375f966829e3dc1b81') in 0.0123758 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/ProCore/Polybrush/Materials/Diffuse Vertex Color.mat
+  artifactKey: Guid(b146d6b7e282d714ebd02b53cb9dccdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProCore/Polybrush/Materials/Diffuse Vertex Color.mat using Guid(b146d6b7e282d714ebd02b53cb9dccdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '499796852416706cf1bee479b78d1b43') in 0.0475533 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/TemplateExamples/Particles/HeatHaze/ParticlesTest.mat
+  artifactKey: Guid(bd452e5ccf13e274891917296c0cda1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/TemplateExamples/Particles/HeatHaze/ParticlesTest.mat using Guid(bd452e5ccf13e274891917296c0cda1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c94eb0e110a74a4d2d53e93340aa6591') in 0.0328213 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/ProCore/Polybrush/Materials/Standard Texture Blend Height.mat
+  artifactKey: Guid(be7987e70322b40c2a8acb2592e4b0b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ProCore/Polybrush/Materials/Standard Texture Blend Height.mat using Guid(be7987e70322b40c2a8acb2592e4b0b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)Shader error in 'Polybrush/Texture Blend Height': invalid subscript 'boxMax' at Assets/ProCore/Polybrush/Shader/z_TextureBlendHeight.shader(295) (on d3d11)
+
+Compiling Subshader: 0, Pass: FORWARD, Vertex program with DIRECTIONAL DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF LIGHTMAP_OFF LIGHTPROBE_SH
+Platform defines: SHADER_API_MOBILE UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PASS_FORWARDBASE UNITY_PBS_USE_BRDF2 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
+Disabled keywords: DIRLIGHTMAP_COMBINED DIRLIGHTMAP_SEPARATE DYNAMICLIGHTMAP_ON FOG_EXP FOG_EXP2 FOG_LINEAR LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 SHADOWS_SCREEN SHADOWS_SHADOWMASK UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON
+Shader error in 'Polybrush/Texture Blend Height': invalid subscript 'boxMax' at Assets/ProCore/Polybrush/Shader/z_TextureBlendHeight.shader(295) (on d3d11)
+
+Compiling Subshader: 0, Pass: FORWARD, Vertex program with DIRECTIONAL DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF LIGHTMAP_OFF LIGHTPROBE_SH
+Platform defines: SHADER_API_MOBILE UNITY_ENABLE_REFLECTION_BUFFERS UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_NO_CUBEMAP_ARRAY UNITY_NO_DXT5nm UNITY_NO_RGBM UNITY_NO_SCREENSPACE_SHADOWS UNITY_PASS_FORWARDBASE UNITY_PBS_USE_BRDF2 UNITY_PLATFORM_SUPPORTS_DEPTH_FETCH
+Disabled keywords: DIRLIGHTMAP_COMBINED DIRLIGHTMAP_SEPARATE DYNAMICLIGHTMAP_ON FOG_EXP FOG_EXP2 FOG_LINEAR LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING SHADER_API_GLES30 SHADER_API_GLES31 SHADER_API_GLES32 SHADOWS_SCREEN SHADOWS_SHADOWMASK UNITY_ASTC_NORMALMAP_ENCODING UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_FRAMEBUFFER_FETCH_AVAILABLE UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHTMAP_RGBM_ENCODING UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_PBS_USE_BRDF1 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_UNIFIED_SHADER_PRECISION_MODEL UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON
+ -> (artifact id: '91ec909c0a49f016ab5b3ec4a2571be9') in 0.0567992 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/TriplanarProjection/TriplanarSimple.mat
+  artifactKey: Guid(bcc9517fce0bd3b4f931ba757497ede9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/TriplanarProjection/TriplanarSimple.mat using Guid(bcc9517fce0bd3b4f931ba757497ede9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3cae04d7f9db7e7d8ed60ef09cc5052c') in 0.1020759 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/StencilExample/RefractionsPanels/AnimatedRefractionGreen.mat
+  artifactKey: Guid(b77b756311bd9db468e4adfd33652476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/StencilExample/RefractionsPanels/AnimatedRefractionGreen.mat using Guid(b77b756311bd9db468e4adfd33652476) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '473293750f6f74d1abd3598d09a886b8') in 0.0108255 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/Burn/BurnEffect.mat
+  artifactKey: Guid(0b019675a8064414b97862a02f644166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/Burn/BurnEffect.mat using Guid(0b019675a8064414b97862a02f644166) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2300be52505a3c61191cf1a56229dc5e') in 0.0922733 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Assets/Materials/Rock.mat
+  artifactKey: Guid(a74e88492fa30e540a88a0a28e6dd93c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Assets/Materials/Rock.mat using Guid(a74e88492fa30e540a88a0a28e6dd93c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '64ac3746b89e7b8bb02e97034e12515f') in 0.0149473 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Geometry/Materials/lambert1.mat
+  artifactKey: Guid(044418ae1a240b74a9332fccbea76405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Geometry/Materials/lambert1.mat using Guid(044418ae1a240b74a9332fccbea76405) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9380de0f9211538a569bcd6c34095ae3') in 0.01037 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Assets/Models/Materials/ae5524-1.mat
+  artifactKey: Guid(a5d40897a4493d44c846a7e719d01ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Assets/Models/Materials/ae5524-1.mat using Guid(a5d40897a4493d44c846a7e719d01ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '74247cb95c4a96a328fc33e3cb1bd656') in 0.010926 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/CustomLightingToon/CustomLightingToon.mat
+  artifactKey: Guid(8f339cf92548e174ebda896d56c93d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/CustomLightingToon/CustomLightingToon.mat using Guid(8f339cf92548e174ebda896d56c93d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '411da4abcef5ccd331e7d178cd585b17') in 0.0885943 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Community/2Sided/2Sided.mat
+  artifactKey: Guid(8ebbbf2c99a544ca780a2573ef1450fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Community/2Sided/2Sided.mat using Guid(8ebbbf2c99a544ca780a2573ef1450fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b296031c9e2afbf3e833a8caf4300d2f') in 0.1181253 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Official/StencilExample/RefractionsPanels/AnimatedRefractionRed.mat
+  artifactKey: Guid(e414af1524d258047bb6b82b8860062c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Official/StencilExample/RefractionsPanels/AnimatedRefractionRed.mat using Guid(e414af1524d258047bb6b82b8860062c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9bdc4746b42a96715dbc2007ff487067') in 0.0111174 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AmplifyShaderEditor/Examples/Assets/Materials/Rubber.mat
+  artifactKey: Guid(1af9fbef8b63fc249a7f5a9834cfd2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AmplifyShaderEditor/Examples/Assets/Materials/Rubber.mat using Guid(1af9fbef8b63fc249a7f5a9834cfd2d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '29d4060463aa84cd71e82322e0f63e4e') in 0.08728 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 107.138895 seconds.
+  path: Assets/Skybox Cubemap Extended.mat
+  artifactKey: Guid(55a329f88dfaaf544bda5bb25837ca4d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Skybox Cubemap Extended.mat using Guid(55a329f88dfaaf544bda5bb25837ca4d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '257ad9b47d9668ff8e69bd418907c26b') in 0.0859121 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
 Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.459 seconds
-Script 'CharacterController' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindow.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowDetailsExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.meta.xr.sdk.core/Editor/BuildingBlocks/BlocksWindowCollectionsPageExtension.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 6.76 ms, found 12 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 6.38 ms, found 12 plugins.
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.813 seconds
-Domain Reload Profiling: 1273ms
-	BeginReloadAssembly (149ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (50ms)
-	RebuildCommonClasses (20ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (14ms)
-	LoadAllAssembliesAndSetupDomain (268ms)
-		LoadAssemblies (222ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (102ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (87ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (814ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (713ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (80ms)
-			ProcessInitializeOnLoadAttributes (508ms)
-			ProcessInitializeOnLoadMethodAttributes (110ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
 WARNING: Shader Unsupported: 'URP/UI/Prerendered Opaque' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
@@ -535,11 +831,11 @@ WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Shader 'ASESampleShaders/Terrain/TerrainSnowCoverageFirstPass': dependency 'BaseMapShader' shader 'ASESampleShaders/TerrainBase' not found
-Refreshing native plugins compatible for Editor in 8.95 ms, found 12 plugins.
+Refreshing native plugins compatible for Editor in 5.97 ms, found 12 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6713 unused Assets / (6.4 MB). Loaded Objects now: 7696.
-Memory consumption went from 197.2 MB to 190.8 MB.
-Total: 14.520800 ms (FindLiveObjects: 0.609000 ms CreateObjectMapping: 0.489900 ms MarkObjects: 10.220600 ms  DeleteObjects: 3.200000 ms)
+Unloading 22 unused Assets / (2.9 MB). Loaded Objects now: 7702.
+Memory consumption went from 189.3 MB to 186.4 MB.
+Total: 10.471100 ms (FindLiveObjects: 0.351800 ms CreateObjectMapping: 0.223500 ms MarkObjects: 9.184800 ms  DeleteObjects: 0.710200 ms)
 
 Prepare: number of updated asset objects reloaded= 0

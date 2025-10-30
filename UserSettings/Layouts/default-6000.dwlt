@@ -69,8 +69,8 @@ MonoBehaviour:
     y: 0
     width: 600.6666
     height: 1277.3334
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 76}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -384,7 +384,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 25.333313}
     m_SelectedIDs: d0be0000
     m_LastClickedID: 48848
-    m_ExpandedIDs: 0000000012be000014be000016be00003ae200003ce200003ee2000040e2000000ca9a3b
+    m_ExpandedIDs: 0000000014be000016be000018be00001abe00001cbe00001ebe000020be0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -413,7 +413,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000012be000014be000016be0000
+    m_ExpandedIDs: 0000000014be000016be000018be00001abe00001cbe00001ebe000020be0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -493,8 +493,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1951.3334
-    y: 86.66667
+    x: 1944.3334
+    y: 24
     width: 599.6666
     height: 1251.3334
   m_SerializedDataModeController:
@@ -543,8 +543,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 86.66667
+    x: 0
+    y: 24
     width: 480.33334
     height: 730.6667
   m_SerializedDataModeController:
@@ -561,8 +561,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0af80000
-      m_LastClickedID: 63498
+      m_SelectedIDs: 
+      m_LastClickedID: 0
       m_ExpandedIDs: 8250ffff2a5effff425effff4265ffffa473ffff4c81ffff6481ffffb488ffff52d4fffffae1ffff12e2ffff5ee9ffffeafaffffacbc00002abd00005abd000068bd000002d5000088d50000b8d50000c6d5000040f800004ef80000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -610,8 +610,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 489.33334
-    y: 86.66667
+    x: 482.33334
+    y: 24
     width: 1460
     height: 730.6667
   m_SerializedDataModeController:
@@ -1218,7 +1218,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.2166215, y: 0.57647866, z: -0.16193244, w: 0.77132887}
     speed: 2
-    m_Value: {x: 0.21580473, y: 0.57651854, z: -0.1613215, w: 0.771382}
+    m_Value: {x: 0.21662152, y: 0.5764787, z: -0.16193245, w: 0.77132887}
   m_Size:
     m_Target: 0.73691124
     speed: 2
@@ -1380,8 +1380,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Console\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 843.3334
+    x: 0
+    y: 780.6667
     width: 1942.3334
     height: 494.6667
   m_SerializedDataModeController:
